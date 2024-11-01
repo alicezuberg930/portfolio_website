@@ -1,66 +1,34 @@
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+import sobexpress from "assets/cms_sobexpress.png"
+import voucherforyou from "assets/cms_voucherforyou.png"
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const HERO_CONTENT = `Tôi là lập trình viên backend với 1 chút kinh nghiệm làm front-end có khả năng tạo ra các ứng dụng web mạnh mẽ và có thể mở rộng. Với 1 năm kinh nghiệm thực tiễn, tôi đã mài giũa kỹ năng của mình trong các công nghệ backend như laravel, php và MySQL cũng như các công nghệ front-end như HTML, CSS, JS, Jquery, Bootstrap, Tailwind CSS. Mục tiêu của tôi là tận dụng chuyên môn của mình để tạo ra các giải pháp sáng tạo thúc đẩy tăng trưởng kinh doanh cho doanh nghiệp và mang lại trải nghiệm người dùng đặc biệt.`;
+
+export const ABOUT_TEXT = `Tôi là một lập trình viên backend tận tâm và linh hoạt với niềm đam mê tạo ra các ứng dụng web hiệu quả và thân thiện với người dùng. Với 1 năm kinh nghiệm chuyên môn, tôi đã làm việc với nhiều công nghệ khác nhau, bao gồm Laravel, PHP, MySQL, HTML, CSS, JS, Bootstrap và Tailwind CSS. Hành trình phát triển web của tôi bắt đầu với sự tò mò sâu sắc về cách mọi thứ hoạt động và nó đã phát triển thành một nghề nghiệp mà tôi liên tục phấn đấu để học hỏi và thích nghi với những thách thức mới. Tôi phát triển mạnh trong môi trường hợp tác và thích giải quyết các vấn đề phức tạp để cung cấp các giải pháp chất lượng cao. Ngoài mã hóa, tôi thích duy trì hoạt động, khám phá các công nghệ mới và đóng góp cho các dự án của công ty.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+    year: "2023 - 2024",
+    role: "Lập trình viên backend",
+    company: "TNHH Di4l.",
+    description: `Làm việc chung nhóm phát triển và duy trì các ứng dụng web bằng Laravel, HTML, CSS, JS, Jquery, Tailwind CSS theo yêu cầu của khách hàng. Phát triển và duy trì hệ thống CMS của khách hàng và hệ thống ERP của công ty. Triển khai các API RESTful và tích hợp với cơ sở dữ liệu MySQL cho ứng dụng mobile. Phối hợp với các bên liên quan để xác định các yêu cầu và mốc thời gian của dự án, tích hợp với các phương thức thanh toán bên thứ 3 và SMS. Quản lý và thiết kế MySQL để hỗ trợ thiết kế API.`,
+    technologies: ["PHP", "Laravel", "HTML", "CSS", "JS", "Jquery", "MySQL", "Tailwind CSS", "Bootstrap"]
+  }
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: "project1",
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    title: "Sobexpressacms",
+    image: sobexpress,
+    description: "Website CMS giúp cho admin quản lý tài xế, phương tiện của họ và đơn hàng, giúp tài xế quản lý đơn hàng cùng với các tính năng như phân quyền, xác thực người dùng.",
+    link: "https://sobexpressacms.di4l.vn/",
+    technologies: ["PHP", "Laravel", "HTML", "CSS", "JS", "Tailwind CSS", "MySQL"],
   },
   {
-    title: "Task Management App",
-    image: "project2",
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
-  {
-    title: "Portfolio Website",
-    image: "project3",
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: "project4",
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    title: "Voucherforyou",
+    image: voucherforyou,
+    description: "Website E-commerce bao gồm CMS giúp cho doanh nghiệp quản lý thông tin doanh nghiệp, khách hàng, tồn kho, sản phẩm, lợi nhuận của họ và thống kê doanh số.",
+    link: "https://voucherforyou.di4lsell.com/",
+    technologies: ["PHP", "Laravel", "HTML", "CSS", "JS", "Bootstrap", "MySQL"],
   },
 ];
 

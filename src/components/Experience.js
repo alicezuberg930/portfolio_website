@@ -17,15 +17,17 @@ const Experience = () => {
                                     <div className="w-full max-w-xl lg:w-3/4">
                                         <h6 className="mb-2 font-normal">{item.role} - <span className="font-bold text-purple-100">{item.company}</span></h6>
                                         <p className="mb-4 text-neutral-400">{item.description}</p>
-                                        {
-                                            item.technologies.map(technology => {
-                                                return (
-                                                    <span key={technology} className="mr-2 mt-2 rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-400">
-                                                        {technology}
-                                                    </span>
-                                                )
-                                            })
-                                        }
+                                        <div className="flex flex-wrap">
+                                            {
+                                                item.technologies.map(technology => {
+                                                    return (
+                                                        <span key={technology} className="mr-2 mt-2 rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-400">
+                                                            {technology}
+                                                        </span>
+                                                    )
+                                                })
+                                            }
+                                        </div>
                                     </div>
                                 </motion.div>
                             </div>

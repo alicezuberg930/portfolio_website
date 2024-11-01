@@ -1,8 +1,8 @@
 import { icons } from "common/icons"
-import { animate, motion, reverseEasing } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Techstack = () => {
-    const { FaLaravel, FaPhp, SiMysql, TiHtml5, SiCss3, IoLogoJavascript, FaBootstrap, RiReactjsLine } = icons
+    const { FaLaravel, FaPhp, SiMysql, TiHtml5, SiCss3, IoLogoJavascript, FaBootstrap, RiReactjsLine, SiJquery } = icons
 
     const iconAnimation = (duration) => ({
         initial: { y: -10 },
@@ -61,10 +61,14 @@ const Techstack = () => {
                 >
                     <RiReactjsLine className="text-5xl text-[#0680a1]" />
                 </motion.div>
+                <motion.div variants={iconAnimation(4.4)} initial="initial" animate="animate"
+                    title="JQuery" className="rounded-2xl border-4 border-neutral-800 p-4"
+                >
+                    <SiJquery className="text-5xl text-[#0768ac]" />
+                </motion.div>
             </div>
         </div>
     )
 }
 
-// 44a8b3
 export default Techstack
