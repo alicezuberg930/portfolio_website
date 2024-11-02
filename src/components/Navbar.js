@@ -8,7 +8,9 @@ const Navbar = () => {
                 <FaLaravel size={36} />
             </div>
             <div className="my-6 flex items-center justify-center text-2xl">
-                <FaGithub />
+                <a href="https://github.com/alicezuberg930" target="_blank">
+                    <FaGithub />
+                </a>
             </div>
         </div>
     )
