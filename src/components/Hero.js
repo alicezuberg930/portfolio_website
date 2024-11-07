@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "assets/data"
-import profileImage from "assets/profile_image.jpg"
+import profileImage from "assets/rem_chibi_2.png"
 import { motion } from "framer-motion"
 
 const Hero = () => {
@@ -28,11 +28,11 @@ const Hero = () => {
                             Nguyễn Vĩnh Tiến
                         </motion.h1>
                         <motion.span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent"
-                            variants={animationLeft(0.4)} initial="invisible" animate="visible"                        >
+                            variants={animationLeft(0.4)} initial="invisible" animate="visible">
                             Lập trình viên backend
                         </motion.span>
                         <motion.p className="my-2 max-w-xl py-6 font-light tracking-tighter"
-                            variants={animationLeft(0.6)} initial="invisible" animate="visible"                        >
+                            variants={animationLeft(0.6)} initial="invisible" animate="visible">
                             {HERO_CONTENT}
                         </motion.p>
                     </div>

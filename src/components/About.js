@@ -1,4 +1,4 @@
-import about1 from "assets/about_1.jpg"
+import about1 from "assets/rem_chibi_1.png"
 import { ABOUT_TEXT } from "assets/data"
 import { motion } from "framer-motion"
 
