@@ -1,33 +1,38 @@
 import { PROJECTS } from "assets/data"
 import { motion } from "framer-motion"
+import { slideLeft } from "utils/animate"
 
 const Projects = () => {
     return (
-        <div className="border-b border-neutral-900 pb-4">
-            <h2 className="my-20 text-center text-4xl">Dự án</h2>
-            <div>
+        <div className="pb-8">
+            <motion.h2 variants={slideLeft({})} whileInView="visible" initial="invisible" className="my-8 text-4xl font-semibold">
+                Dự án
+            </motion.h2>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {
                     PROJECTS.map((project, i) => {
                         return (
-                            <div key={i} className="mb-10 flex flex-wrap gap-4 lg:justify-center">
-                                <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 0.5 }} className="w-full lg:w-1/4">
-                                    <img src={project.image} className="w-52 h-44 mb-6 rounded border-2" alt={project.title} />
-                                </motion.div>
-                                <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 100 }} transition={{ duration: 0.5 }} className="w-full max-w-xl lg:w-3/4">
-                                    <h6 className="mb-2 font-semibold">{project.title}</h6>
+                            <motion.div key={i} whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 60 }} transition={{ duration: 0.5, delay: 0.2 * i }} className="bg-[oklch(14.5%,0,0)] flex flex-col gap-6 rounded-xl border border-gray-700 py-6 shadow-sm group h-full overflow-hidden pt-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                                <div className="aspect-video">
+                                    <img src={project.image} className="h-full object-cover" alt={project.title} />
+                                </div>
+                                <div className="px-4">
+                                    <h6 className="mb-2 font-semibold text-xl">{project.title}</h6>
                                     <p className="mb-2 text-neutral-400">{project.description}</p>
-                                    <p className="mb-4">Link nằm ở: <a target="_blank" href={project.link}>{project.link}</a></p>
-                                    {
-                                        project.technologies.map(technology => {
-                                            return (
-                                                <span key={technology} className="mr-2 mt-2 rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-400">
-                                                    {technology}
-                                                </span>
-                                            )
-                                        })
-                                    }
-                                </motion.div>
-                            </div>
+                                    <div className="flex flex-wrap gap-2 h-16">
+                                        {project.technologies.map(technology => (
+                                            <span key={technology} className="rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-400 h-fit">
+                                                {technology}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="px-4">
+                                    <a href="" className="border-gray-700 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none bg-background hover:bg-black hover:text-red-300 border h-9 px-4 py-2 w-full">
+                                        Xem thêm
+                                    </a>
+                                </div>
+                            </motion.div>
                         )
                     })
                 }

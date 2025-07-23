@@ -1,8 +1,9 @@
 import { icons } from "common/icons"
 import { motion } from "framer-motion"
+import { slideLeft } from "utils/animate"
 
 const Techstack = () => {
-    const { FaLaravel, FaPhp, SiMysql, TiHtml5, SiCss3, IoLogoJavascript, FaBootstrap, RiReactjsLine, SiJquery } = icons
+    const { FaLaravel, FaPhp, SiMysql, TiHtml5, SiCss3, IoLogoJavascript, FaBootstrap, RiReactjsLine, SiJquery, RiNextjsFill, RiTailwindCssFill, FaGithub, FaDocker, SiPostman } = icons
 
     const iconAnimation = (duration) => ({
         initial: { y: -10 },
@@ -18,8 +19,10 @@ const Techstack = () => {
     })
 
     return (
-        <div className="border-b border-neutral-900 pb-24">
-            <h2 className="my-20 text-center text-4xl">Công nghệ sử dụng</h2>
+        <div className="border-b border-gray-700 pb-8">
+            <motion.h2 variants={slideLeft({})} whileInView="visible" initial="invisible" className="my-8 text-4xl font-semibold">
+                Công nghệ sử dụng
+            </motion.h2>
             <div className="flex flex-wrap items-center justify-center gap-4">
                 <motion.div variants={iconAnimation(2)} initial="initial" animate="animate"
                     title="Laravel" className="rounded-2xl border-4 border-neutral-800 p-4"
