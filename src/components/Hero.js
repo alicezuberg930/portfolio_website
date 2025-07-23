@@ -18,7 +18,7 @@ const Hero = () => {
                         >
                             Lập trình viên full-stack
                         </motion.span>
-                        <motion.p className="my-6 max-w-xl font-light tracking-tighter"
+                        <motion.p className="my-6 max-w-full md:max-w-2xl font-light tracking-tighter"
                             variants={slideLeft({ delay: 0.6 })} whileInView="visible" initial="invisible"
                         >
                             {HERO_CONTENT}

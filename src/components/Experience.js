@@ -20,7 +20,7 @@ const Experience = () => {
                             <p className="text-neutral-400">{item.description}</p>
                             <div className="flex flex-wrap">
                                 {item.technologies.map(technology => (
-                                    <span key={technology} className="mr-2 mt-2 rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-400">
+                                    <span key={technology} className="mr-2 mt-2 rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-white">
                                         {technology}
                                     </span>
                                 ))}

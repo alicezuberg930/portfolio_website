@@ -1,10 +1,11 @@
 import { PROJECTS } from "assets/data"
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 import { slideLeft } from "utils/animate"
 
 const Projects = () => {
     return (
-        <div className="pb-8">
+        <>
             <motion.h2 variants={slideLeft({})} whileInView="visible" initial="invisible" className="my-8 text-4xl font-semibold">
                 Dự án
             </motion.h2>
@@ -18,17 +19,20 @@ const Projects = () => {
                                 </div>
                                 <div className="px-4">
                                     <h6 className="mb-2 font-semibold text-xl">{project.title}</h6>
-                                    <p className="mb-2 text-neutral-400">{project.description}</p>
-                                    <div className="flex flex-wrap gap-2 h-16">
+                                    <div className="mb-2 text-neutral-400">{project.description}</div>
+                                    <div className="flex flex-wrap gap-2">
                                         {project.technologies.map(technology => (
-                                            <span key={technology} className="rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-400 h-fit">
+                                            <span key={technology} className="rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-white h-fit">
                                                 {technology}
                                             </span>
                                         ))}
                                     </div>
                                 </div>
-                                <div className="px-4">
-                                    <a href="" className="border-gray-700 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none bg-background hover:bg-black hover:text-red-300 border h-9 px-4 py-2 w-full">
+                                <div className="px-4 mt-auto">
+                                    {/* <Link to={project.link} className="border-gray-700 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none bg-background hover:bg-black hover:text-gray-300 border h-9 px-4 py-2 w-full">
+                                        Xem thêm
+                                    </Link> */}
+                                    <a href={project.link} target="_blank" className="border-gray-700 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none bg-background hover:bg-black hover:text-gray-300 border h-9 px-4 py-2 w-full">
                                         Xem thêm
                                     </a>
                                 </div>
@@ -37,7 +41,7 @@ const Projects = () => {
                     })
                 }
             </div>
-        </div>
+        </>
     )
 }
 
