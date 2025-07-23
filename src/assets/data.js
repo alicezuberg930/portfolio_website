@@ -114,7 +114,7 @@ export const CONTACT = {
 export const EDUCATIONS = [
   {
     school: 'Đại Học Sài Gòn',
-    year: '08/2019 - 08/2023',
+    year: '08/2019 - 06/2024',
     gpa: '2.91/4',
     branch: 'IT - Công nghệ thông tin/phần mềm'
   }
