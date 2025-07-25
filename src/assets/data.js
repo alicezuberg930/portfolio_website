@@ -8,7 +8,7 @@ export const EXPERIENCES = [
     role: "Lập trình viên backend",
     company: "Công ty TNHH Di4l",
     description: `Làm việc chung với nhóm phát triển và duy trì các ứng dụng web CMS bằng Laravel, HTML, CSS, JS, Tailwind CSS theo yêu cầu của khách hàng. Kết nối đến CSDL MySQL và triển khai các Rest API cho các ứng dụng mobile và web. Tích hợp với các phương thức thanh toán bên thứ 3 (VNPay, Onepay, Momo) và SMS OTP. Phát triển ứng dụng mobile bằng flutter`,
-    technologies: ["PHP", "Laravel", "HTML", "CSS", "JS", "MySQL", "Tailwind CSS", "Bootstrap"]
+    technologies: ["PHP", "Laravel", "HTML", "CSS", "JS", "MySQL", "Tailwind CSS", "Bootstrap", "Flutter"]
   },
   {
     year: "08/2024 - 08/2025",
