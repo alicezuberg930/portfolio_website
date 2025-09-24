@@ -1,21 +1,21 @@
 import { icons } from "common/icons";
 
-export const HERO_CONTENT = `Tôi là lập trình viên fullstack có khả năng tạo ra các ứng dụng web và API tối ưu, nhẹ và nhanh. Với 1 năm kinh nghiệm thực tiễn, tôi đã mài giũa kỹ năng của mình trong các công nghệ fullstack như Laravel, NestJS, ReactJS, NextJS. Mục tiêu của tôi là tận dụng chuyên môn của mình để tạo ra các trang web và tối ưu hiệu năng để thúc đẩy tăng trưởng kinh doanh cho doanh nghiệp và mang lại trải nghiệm mượt mà cho người dùng.`;
+export const HERO_CONTENT = `Tôi là lập trình viên fullstack có khả năng tạo ra các ứng dụng web nhanh và thiết kế API tối ưu. Với 2 năm kinh nghiệm thực tiễn, tôi đã mài giũa kỹ năng của mình trong các công nghệ fullstack như NestJS, ReactJS, Next.js. Mục tiêu của tôi là tận dụng chuyên môn của mình để tạo ra các trang web và tối ưu hiệu năng để thúc đẩy tăng trưởng kinh doanh cho doanh nghiệp và mang lại trải nghiệm mượt mà cho người dùng.`;
 
 export const EXPERIENCES = [
+  // {
+  //   year: "08/2023 - 07/2024",
+  //   role: "Lập trình viên backend",
+  //   company: "Công ty TNHH Di4l",
+  //   description: `Làm việc chung với nhóm phát triển và duy trì các ứng dụng web CMS bằng Laravel, HTML, CSS, JS, Tailwind CSS theo yêu cầu của khách hàng. Kết nối đến CSDL MySQL và triển khai các Rest API cho các ứng dụng mobile và web. Tích hợp với các phương thức thanh toán bên thứ 3 (VNPay, Onepay, Momo) và SMS OTP. Phát triển ứng dụng mobile bằng flutter`,
+  //   technologies: ["PHP", "Laravel", "HTML", "CSS", "JS", "MySQL", "Tailwind CSS", "Bootstrap", "Flutter"]
+  // },
   {
-    year: "08/2023 - 07/2024",
-    role: "Lập trình viên backend",
-    company: "Công ty TNHH Di4l",
-    description: `Làm việc chung với nhóm phát triển và duy trì các ứng dụng web CMS bằng Laravel, HTML, CSS, JS, Tailwind CSS theo yêu cầu của khách hàng. Kết nối đến CSDL MySQL và triển khai các Rest API cho các ứng dụng mobile và web. Tích hợp với các phương thức thanh toán bên thứ 3 (VNPay, Onepay, Momo) và SMS OTP. Phát triển ứng dụng mobile bằng flutter`,
-    technologies: ["PHP", "Laravel", "HTML", "CSS", "JS", "MySQL", "Tailwind CSS", "Bootstrap", "Flutter"]
-  },
-  {
-    year: "08/2024 - 08/2025",
+    year: "07/2023 - 08/2025",
     role: "Lập trình viên fullstack.",
     company: "Công ty cổ phần & thương mại Future Life",
     description: `Làm việc với nhóm IT của công ty để phát triển và duy trì các ứng dụng web bán hàng, landing page và CMS bằng React, Next.js và Nest JS theo yêu cầu của công ty. Kết nối đến CSDL MongoDB bằng Nest JS để triển khai các Rest API cho các ứng dụng web`,
-    technologies: ["Typescript", "HTML", "CSS", "ReactJS", "Next.js", "Nest JS", "Tailwind CSS", "Material UI"]
+    technologies: ["Typescript", "HTML", "CSS", "ReactJS", "Next.js", "Nest JS", "Tailwind CSS", "Material UI", "MongoDB"]
   },
 ];
 // https://play.google.com/store/apps/details?id=g47.delivery.di4l.vn
@@ -49,7 +49,7 @@ export const PROJECTS = [
     id: "sod-cms-website",
     title: "SOD CMS Website",
     image: './assets/sod-cms-website.png',
-    description: "Website CMS giúp cho admin quản lý tài xế, phương tiện và đơn hàng, giúp tài xế quản lý đơn hàng cùng với các tính năng như phân quyền, xác thực người dùng.",
+    description: "Website CMS giúp cho admin quản lý tài xế, phương tiện và các chuyến book phương tiên di chuyển cùng với các tính năng như phân quyền, xác thực người dùng.",
     link: "https://sod.di4l.vn/",
     technologies: ["PHP", "Laravel", "HTML", "CSS", "Javascript", "Tailwind CSS", "MySQL"],
   },
@@ -75,7 +75,7 @@ export const PROJECTS = [
     image: './assets/anhsangtuthien-landing-website.png',
     description: "Website landing page giới thiệu thông tin về các hoạt động từ thiện của tổ chức ánh sáng từ thiện, có liên kết đến API của google youtube để hiển thị danh sách các video của họ.",
     link: "https://anhsangtuthien.com/",
-    technologies: ["React", "HTML", "CSS", "Tailwind CSS", "NestJS", "MongoDB"],
+    technologies: ["React", "HTML", "CSS", "Tailwind CSS", "NestJS", "MongoDB", "Redux"],
   },
   {
     id: "music-player-website",
@@ -116,7 +116,7 @@ export const EDUCATIONS = [
     school: 'Đại Học Sài Gòn',
     year: '08/2019 - 06/2024',
     gpa: '2.91/4',
-    branch: 'IT - Công nghệ thông tin/phần mềm'
+    branch: 'IT - Công nghệ thông tin'
   }
 ]
 
