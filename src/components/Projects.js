@@ -15,7 +15,13 @@ const Projects = () => {
                         return (
                             <motion.div key={i} whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 60 }} transition={{ duration: 0.5, delay: 0.2 * i }} className="bg-[oklch(14.5%,0,0)] flex flex-col gap-6 rounded-xl border border-gray-700 py-6 shadow-sm group h-full overflow-hidden pt-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                                 <div className="aspect-video">
-                                    <img src={project.image} className="h-full object-cover" alt={project.title} />
+                                    {project.image ? (
+                                        <img src={project.image} className="h-full object-cover" alt={project.title} />
+                                    ) : (
+                                        <div className="bg-gray-300 border-2 border-dashed rounded-xl w-full h-full flex items-center justify-center p-4">
+                                            <span className="text-gray-500">No Image Available</span>
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="px-4">
                                     <h6 className="mb-2 font-semibold text-xl">{project.title}</h6>
@@ -32,9 +38,11 @@ const Projects = () => {
                                     {/* <Link to={project.link} className="border-gray-700 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none bg-background hover:bg-black hover:text-gray-300 border h-9 px-4 py-2 w-full">
                                         Xem thêm
                                     </Link> */}
-                                    <a href={project.link} target="_blank" className="border-gray-700 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none bg-background hover:bg-black hover:text-gray-300 border h-9 px-4 py-2 w-full">
-                                        Xem thêm
-                                    </a>
+                                    {project.link && (
+                                        <a href={project.link} target="_blank" className="border-gray-700 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none bg-background hover:bg-black hover:text-gray-300 border h-9 px-4 py-2 w-full">
+                                            Xem thêm
+                                        </a>
+                                    )}
                                 </div>
                             </motion.div>
                         )

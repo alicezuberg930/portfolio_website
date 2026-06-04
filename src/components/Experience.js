@@ -13,10 +13,13 @@ const Experience = () => {
                     <motion.div variants={slideUp({ delay: 0.2 * i })} whileInView="visible" initial="invisible" key={item.company} className='relative border-l border-l-white'>
                         <div className="w-3 h-3 rounded-full bg-white absolute right-[calc(100%-6px)]"></div>
                         <div className={`pl-6 flex flex-col gap-2 ${i < EXPERIENCES.length - 1 && 'pb-8'}`}>
-                            <span className="font-bold text-2xl">
-                                {item.company} ({item.year})
-                            </span>
-                            <h6 className="">{item.role}</h6>
+                            <div className="flex items-center gap-2">
+                                <span className="font-bold text-2xl text-zinc-50">
+                                    {item.company}
+                                </span>
+                                <span className="text-neutral-400">({item.year})</span>
+                            </div>
+                            <h6 className="text-zinc-50">{item.role}</h6>
                             <p className="text-neutral-400">{item.description}</p>
                             <div className="flex flex-wrap">
                                 {item.technologies.map(technology => (

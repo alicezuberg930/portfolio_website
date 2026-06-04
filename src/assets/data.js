@@ -4,18 +4,25 @@ export const HERO_CONTENT = `Tôi là lập trình viên fullstack có khả nă
 
 export const EXPERIENCES = [
   {
-    year: "08/2023 - 07/2024",
-    role: "Lập trình viên backend",
+    year: "10/2023 - 03/2024",
+    role: "Backend & Mobile Developer",
     company: "Công ty TNHH Di4l",
-    description: `Làm việc chung với nhóm phát triển và duy trì các ứng dụng web CMS bằng Laravel, HTML, CSS, JS, Tailwind CSS theo yêu cầu của khách hàng. Kết nối đến CSDL MySQL và triển khai các Rest API cho các ứng dụng mobile và web. Tích hợp với các phương thức thanh toán bên thứ 3 (VNPay, Onepay, Momo) và SMS OTP. Phát triển ứng dụng mobile bằng flutter`,
+    description: `Làm việc chung với nhóm IT và duy trì các ứng dụng web CMS bằng Laravel, HTML, CSS, JS, Tailwind CSS theo yêu cầu của khách hàng. Kết nối đến CSDL MySQL và triển khai các Rest API cho các ứng dụng mobile và web. Tích hợp với các phương thức thanh toán bên thứ 3 (VNPay, Onepay, Momo) và SMS OTP. Phát triển ứng dụng mobile bằng flutter`,
     technologies: ["PHP", "Laravel", "HTML", "CSS", "JS", "MySQL", "Tailwind CSS", "Bootstrap", "Flutter"]
   },
   {
-    year: "08/2024 - 08/2025",
-    role: "Lập trình viên fullstack.",
-    company: "Công ty cổ phần & thương mại Future Life",
+    year: "03/2024 - 04/2025",
+    role: "Fullstack Developer",
+    company: "Công ty cổ phần thương mại & phát triển Future Life",
     description: `Làm việc với nhóm IT của công ty để phát triển và duy trì các ứng dụng web bán hàng, landing page và CMS bằng React, Next.js và Nest JS theo yêu cầu của công ty. Kết nối đến CSDL MongoDB bằng Nest JS để triển khai các Rest API cho các ứng dụng web`,
     technologies: ["Typescript", "HTML", "CSS", "ReactJS", "Next.js", "Nest JS", "Tailwind CSS", "Material UI"]
+  },
+  {
+    year: "04/2025 - 03/2026",
+    role: "Fullstack Developer & Devops Engineer",
+    company: "Công ty TNHH phần mềm tường minh (TMA Solutions)",
+    description: `Triển khai và quản lý các hệ thống trên AWS (EKS, EC2, S3), thiết lập quy trình CI/CD để tự động hóa quá trình triển khai bằng GitLab CI/CD và Jenkins, thiết lập và duy trì các hệ thống giám sát sử dụng Grafana, Prometheus. Giao tiếp và báo cáo với khách hàng bằng tiếng anh, làm việc với nhóm IT để xây dựng và duy trì các ứng dụng web và API bằng ReactJS, Java Spring boot.`,
+    technologies: ["Typescript", "HTML", "CSS", "ReactJS", "Java", "Spring Boot", "Kubernetes", "Gitlab CI/CD", "Jenkins", "Prometheus", "Grafana", "AWS", "PostgreSQL"]
   },
 ];
 // https://play.google.com/store/apps/details?id=g47.delivery.di4l.vn
@@ -37,9 +44,8 @@ export const PROJECTS = [
     technologies: ["Next.js", "Nest JS", "MongoDB", "HTML", "CSS", "Tailwind CSS", "Redux", "JWT"],
   },
   {
-
     id: "app-dat-xe",
-    title: "App đặt xe",
+    title: "Booking App",
     image: './assets/sod-app.png',
     description: "App đặt xe, giao hàng, gọi đồ ăn, thuê xe và thuê dịch vụ cho khách hàng trên nền tảng android và ios",
     link: "https://play.google.com/store/apps/details?id=ungdung.sod.vn&hl=en",
@@ -54,24 +60,16 @@ export const PROJECTS = [
     technologies: ["PHP", "Laravel", "HTML", "CSS", "Javascript", "Tailwind CSS", "MySQL"],
   },
   {
-    id: "voucher-for-you-cms-website",
-    title: "Voucherforyou CMS Website",
-    image: './assets/cms_voucherforyou.png',
-    description: "Website E-commerce bao gồm CMS giúp cho doanh nghiệp quản lý thông tin doanh nghiệp, khách hàng, tồn kho, sản phẩm, lợi nhuận của họ và thống kê doanh số.",
-    link: "https://voucherforyou.di4lsell.com/",
+    id: "my.di4l.vn",
+    title: "OneSell",
+    image: './assets/onesell.png',
+    description: "Website cho các doanh nghiệp thuê như SaaS với các chức năng quản lý bao gồm ERP, CRM, HRM, Point of sell và kế toán,.",
+    link: "https://my.di4l.vn/",
     technologies: ["PHP", "Laravel", "HTML", "CSS", "Javascript", "Bootstrap", "MySQL"],
   },
   {
-    id: "video-call-website",
-    title: "Video Call Website",
-    image: './assets/video-call-website.png',
-    description: "Website cho gọi video giữa 2 người dùng khác nhau bằng cách áp dụng socket.io và WebRTC.",
-    link: "https://react-video-website-ten.vercel.app/",
-    technologies: ["Next.js", "HTML", "CSS", "Typescript", "Material UI", "Socket.io", "WebRTC"],
-  },
-  {
     id: "anh-sang-tu-thien-website",
-    title: "Ánh Sáng Từ Thiện Landing Website",
+    title: "Landing Website",
     image: './assets/anhsangtuthien-landing-website.png',
     description: "Website landing page giới thiệu thông tin về các hoạt động từ thiện của tổ chức ánh sáng từ thiện, có liên kết đến API của google youtube để hiển thị danh sách các video của họ.",
     link: "https://anhsangtuthien.com/",
@@ -86,21 +84,13 @@ export const PROJECTS = [
     technologies: ["React", "Nest JS", "HTML", "CSS", "Tailwind CSS", "Redux"],
   },
   {
-    id: "63Car-showroom-website",
-    title: "63Car Showroom Website",
-    image: './assets/car-showroom-website.png',
-    description: "Website showroom các loại xe ô tô 4 bánh.",
-    link: "https://car-ecommerce-web-user.vercel.app/",
-    technologies: ["Next.js", "Nest JS", "HTML", "CSS", "Tailwind CSS", "MongoDB"],
-  },
-  {
-    id: "anime-figure-website",
-    title: "Anime Figure Website",
-    image: './assets/anime-figure-website.png',
-    description: "Website bán mô hình anime.",
-    link: "https://wibu-website.vercel.app/",
-    technologies: ["Next.js", "Nest JS", "HTML", "CSS", "Material UI", "Redux", "MongoDB"],
-  },
+    id: "radio-management-website",
+    title: "Radio Devices CMS",
+    image: null,
+    description: "Website quản lý radio, cho phép người dùng quản lý, và theo dõi hoạt động của radio trong thời gian thực, gán quyền dùng radio cho người dùng.",
+    link: null,
+    technologies: ["Kubernetes", "Gitlab CI/CD", "Prometheus", "Grafana", "AWS", "React", "Java", "Spring boot", "NestJS", "PostgreSQL"],
+  }
 ];
 
 export const CONTACT = {
@@ -132,7 +122,7 @@ export const CERTIFICATES = [
   }
 ]
 
-const { SiFlutter, SiNestjs, SiWebrtc, SiRedux, BiLogoTypescript, FaLaravel, FaPhp, SiSocketdotio, SiMysql, SiMongodb, TiHtml5, SiCss3, IoLogoJavascript, FaBootstrap, RiReactjsLine, RiNextjsFill, RiTailwindCssFill, FaDocker, SiPostman, BsGit, SiMui, SiJsonwebtokens } = icons
+const { FaJenkins, SiShadcnui, AiOutlineKubernetes, FaNodeJs, SiPostgresql, SiFlutter, SiNestjs, SiWebrtc, SiRedux, BiLogoTypescript, FaLaravel, FaPhp, SiSocketdotio, SiMysql, SiMongodb, TiHtml5, SiCss3, IoLogoJavascript, FaBootstrap, RiReactjsLine, RiNextjsFill, RiTailwindCssFill, FaDocker, SiPostman, BsGit, SiMui, SiJsonwebtokens } = icons
 
 export const techStacks = [
   {
@@ -174,12 +164,17 @@ export const techStacks = [
         icon: <RiNextjsFill />
       },
       {
+        name: "Express",
+        color: "#83cd29",
+        icon: <FaNodeJs />
+      },
+      {
         name: "Laravel",
         color: "#ff2d20",
         icon: <FaLaravel />
       },
       {
-        name: "Nest JS",
+        name: "NestJS",
         color: "#df224e",
         icon: <SiNestjs />
       },
@@ -194,9 +189,14 @@ export const techStacks = [
     type: "Thư viện",
     items: [
       {
-        name: "React",
+        name: "ReactJS",
         color: "#60dbfc",
         icon: <RiReactjsLine />
+      },
+      {
+        name: "Shadcn UI",
+        color: "#ffffff",
+        icon: <SiShadcnui />
       },
       {
         name: "Tailwind CSS",
@@ -243,6 +243,16 @@ export const techStacks = [
         color: "#e34c1c",
         icon: <SiPostman />
       },
+      {
+        name: "Kubernetes",
+        color: "#326ce5",
+        icon: <AiOutlineKubernetes />
+      },
+      {
+        name: "Jenkins",
+        color: "#d33833",
+        icon: <FaJenkins />
+      }
     ]
   },
   {
@@ -267,6 +277,11 @@ export const techStacks = [
         name: "MySQL",
         color: "#00618a",
         icon: <SiMysql />
+      },
+      {
+        name: "PostgreSQL",
+        color: "#336791",
+        icon: <SiPostgresql />
       },
       {
         name: "MongoDB",
