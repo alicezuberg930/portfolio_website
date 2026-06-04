@@ -50,7 +50,7 @@ const Hero = memo(() => {
                 </div>
                 <div className="w-full lg:w-1/3">
                     <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                        <motion.img src='/assets/about_1.jpg' alt="profile" className="object-cover w-full h-full"
+                        <motion.img src='/assets/me.jpg' alt="profile" className="object-cover w-full h-full"
                             variants={slideRight({ delay: 0.6 })} whileInView="visible" initial="invisible"
                         />
                     </div>
