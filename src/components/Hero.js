@@ -1,8 +1,9 @@
 import { CONTACT, HERO_CONTENT } from "assets/data"
 import { motion } from "framer-motion"
+import { memo } from "react"
 import { slideLeft, slideRight } from "utils/animate"
 
-const Hero = () => {
+const Hero = memo(() => {
     return (
         <div className="border-b border-gray-700 pb-8">
             <div className="flex flex-wrap">
@@ -57,6 +58,6 @@ const Hero = () => {
             </div>
         </div>
     )
-}
+})
 
 export default Hero

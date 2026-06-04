@@ -122,7 +122,7 @@ export const CERTIFICATES = [
   }
 ]
 
-const { FaJenkins, SiShadcnui, AiOutlineKubernetes, FaNodeJs, SiPostgresql, SiFlutter, SiNestjs, SiWebrtc, SiRedux, BiLogoTypescript, FaLaravel, FaPhp, SiSocketdotio, SiMysql, SiMongodb, TiHtml5, SiCss3, IoLogoJavascript, FaBootstrap, RiReactjsLine, RiNextjsFill, RiTailwindCssFill, FaDocker, SiPostman, BsGit, SiMui, SiJsonwebtokens } = icons
+const { FaAws, SiGrafana, SiPrometheus, FaJenkins, SiShadcnui, AiOutlineKubernetes, FaNodeJs, SiPostgresql, SiFlutter, SiNestjs, SiWebrtc, SiRedux, BiLogoTypescript, FaLaravel, FaPhp, SiSocketdotio, SiMysql, SiMongodb, TiHtml5, SiCss3, IoLogoJavascript, FaBootstrap, RiReactjsLine, RiNextjsFill, RiTailwindCssFill, FaDocker, SiPostman, BsGit, SiMui, SiJsonwebtokens } = icons
 
 export const techStacks = [
   {
@@ -252,6 +252,21 @@ export const techStacks = [
         name: "Jenkins",
         color: "#d33833",
         icon: <FaJenkins />
+      },
+      {
+        name: "Prometheus",
+        color: "#d33833",
+        icon: <SiPrometheus />
+      },
+      {
+        name: "Grafana",
+        color: "#f15927",
+        icon: <SiGrafana />
+      },
+      {
+        name: "AWS",
+        color: "#ff8d06",
+        icon: <FaAws />
       }
     ]
   },

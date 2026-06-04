@@ -1,8 +1,9 @@
 import { EXPERIENCES } from "assets/data"
 import { motion } from "framer-motion"
+import { memo } from "react"
 import { slideLeft, slideUp } from "utils/animate"
 
-const Experience = () => {
+const Experience = memo(() => {
     return (
         <div className="border-b border-gray-700 pb-8">
             <motion.h2 variants={slideLeft({})} whileInView="visible" initial="invisible" className="my-8 text-4xl font-semibold">
@@ -34,6 +35,6 @@ const Experience = () => {
             })}
         </div>
     )
-}
+})
 
 export default Experience

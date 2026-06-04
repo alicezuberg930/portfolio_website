@@ -1,9 +1,9 @@
 import { PROJECTS } from "assets/data"
 import { motion } from "framer-motion"
-import { Link } from "react-router-dom"
+import { memo } from "react"
 import { slideLeft } from "utils/animate"
 
-const Projects = () => {
+const Projects = memo(() => {
     return (
         <>
             <motion.h2 variants={slideLeft({})} whileInView="visible" initial="invisible" className="my-8 text-4xl font-semibold">
@@ -51,6 +51,6 @@ const Projects = () => {
             </div>
         </>
     )
-}
+})
 
 export default Projects

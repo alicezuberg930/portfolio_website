@@ -1,8 +1,9 @@
 import { CERTIFICATES } from "assets/data"
 import { slideLeft, slideUp } from "utils/animate"
 import { motion } from "framer-motion"
+import { memo } from "react"
 
-const Certificate = () => {
+const Certificate = memo(() => {
     return (
         <div className="border-b border-gray-700 pb-8">
             <motion.h2 variants={slideLeft({})} whileInView="visible" initial="invisible" className="my-8 text-4xl font-semibold">
@@ -24,6 +25,6 @@ const Certificate = () => {
             })}
         </div>
     )
-}
+})
 
 export default Certificate
