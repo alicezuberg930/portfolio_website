@@ -39,7 +39,7 @@ const Projects = memo(() => {
                                         Xem thêm
                                     </Link> */}
                                     {project.link && (
-                                        <a href={project.link} target="_blank" className="border-gray-700 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none bg-background hover:bg-black hover:text-gray-300 border h-9 px-4 py-2 w-full">
+                                        <a href={project.link} target="_blank" rel="noreferrer" className="border-gray-700 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none bg-background hover:bg-black hover:text-gray-300 border h-9 px-4 py-2 w-full">
                                             Xem thêm
                                         </a>
                                     )}
