@@ -1,7 +1,7 @@
 import { CONTACT, HERO_CONTENT } from "assets/data"
 import { motion } from "framer-motion"
 import { memo } from "react"
-import { slideLeft, slideRight } from "utils/animate"
+import { slideLeft } from "utils/animate"
 
 const Hero = memo(() => {
     return (
